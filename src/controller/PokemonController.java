@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+import model.Pokemon;
 import model.Bulbasaur;
 import model.Charizard;
 import model.Dragonite;
@@ -51,9 +53,9 @@ public class PokemonController extends HttpServlet {
 			
 			
 		  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message1",//getter);
-			request.setAttribute("character1", bulbasaur.getCharacteristics()));
+			msg = "<center>" + bulbasaur.getPokemonName() + "  #" + bulbasaur.getPokemonNumber();
+			request.setAttribute("message1",msg);
+			request.setAttribute("character1", bulbasaur.getCharacteristics());
 			request.setAttribute("type1",  bulbasaur.getType());
 			request.setAttribute("evolution1", bulbasaur.getEvolution());
 			request.setAttribute("baseExp1",bulbasaur.getBaseExp());
@@ -67,9 +69,9 @@ public class PokemonController extends HttpServlet {
 			
 			
 				  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message2",//getter);
-			request.setAttribute("character2", charizard.getCharacteristics()));
+			msg = "<center>" + charizard.getPokemonName() + "  #" + charizard.getPokemonNumber();
+			request.setAttribute("message2",msg);
+			request.setAttribute("character2", charizard.getCharacteristics());
 			request.setAttribute("type2",charizard.getType());
 			request.setAttribute("evolution2",charizard.getEvolution() );
 			request.setAttribute("baseExp2",charizard.getBaseExp() );
@@ -86,9 +88,9 @@ public class PokemonController extends HttpServlet {
 			
 
 				  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message3",//getter);
-			request.setAttribute("character3", Dragonite.getCharacteristics()));
+			msg = "<center>" + Dragonite.getPokemonName() + "  #" + Dragonite.getPokemonNumber();
+			request.setAttribute("message3",msg);
+			request.setAttribute("character3", Dragonite.getCharacteristics());
 			request.setAttribute("type3",Dragonite.getType());
 			request.setAttribute("evolution3",Dragonite.getEvolution() );
 			request.setAttribute("baseExp3", Dragonite.getBaseExp());
@@ -102,9 +104,9 @@ public class PokemonController extends HttpServlet {
 			
 			
 			  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message4",//getter);
-			request.setAttribute("character4",mew.getCharacteristics()));
+			msg = "<center>" + mew.getPokemonName() + "  #" + mew.getPokemonNumber();
+			request.setAttribute("message4",msg);
+			request.setAttribute("character4",mew.getCharacteristics());
 			request.setAttribute("type4",mew.getType());
 			request.setAttribute("evolution4", mew.getEvolution());
 			request.setAttribute("baseExp4",mew.getBaseExp() );
@@ -120,9 +122,9 @@ public class PokemonController extends HttpServlet {
 			
 			
 			 
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message5",//getter);
-			request.setAttribute("character5", pikachu.getCharacteristics()));
+			msg = "<center>" + pikachu.getPokemonName() + "  #" + pikachu.getPokemonNumber();
+			request.setAttribute("message5",msg);
+			request.setAttribute("character5", pikachu.getCharacteristics());
 			request.setAttribute("type5",pikachu.getType());
 			request.setAttribute("evolution5", pikachu.getEvolution());
 			request.setAttribute("baseExp5", pikachu.getBaseExp());
